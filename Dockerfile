@@ -1,4 +1,3 @@
 FROM openjdk:21
-COPY target/Insurance-Management.jar  /usr/app/
-WORKDIR /usr/app/
+ADD target/Insurance-Management.jar Insurance-Management.jar
 ENTRYPOINT ["java", "-jar", "Insurance-Management"]
